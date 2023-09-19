@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="stopots.js"></script>
+    <link rel="stylesheet" href="stopots.css">
+    <title>Stopots - Tela de Entrada</title>
+</head>
+<body>
+    <div class="container" id="tela1">
+        <h1>Bem-vindo ao Stopots!</h1>
+        <p>Informe seu nome de usuário:</p>
+        <input type="text" id="nomeUsuarioInput" placeholder="Nome de Usuário">
+        <p>Informe sua senha:</p>
+        <input type="password" id="senhaInput" placeholder="Senha">
+        <button onclick="confirmarCredenciais()">Entrar</button>
+    </div>
+
+    <div class="container" id="tela2" style="display: none;">
+        <h1>Confirmação</h1>
+        <p>Nome de usuário: <span id="nomeUsuarioConfirmado"></span></p>
+        <button onclick="adicionarOutroNome()">Adicionar Outro Usuário</button>
+    </div>
+
+</body>
+</html>
